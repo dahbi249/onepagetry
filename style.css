@@ -1,0 +1,477 @@
+:root{
+    --main-color: #02c4ff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: rgba(0, 84, 133, 0.507);
+}
+.all-section{
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+/* ----------------------- START NAV BAR ------------------------------------------------------------ */
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.logo img{
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    transition: .3s;
+
+}
+.logo img:hover{
+    width: 60px;
+    height: 60px;
+}
+.menu ul{
+    width: 500px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu ul li{
+    width: 100%;
+    height:100%;
+    padding: 10px;
+    transition: .5s;
+}
+.menu ul li:hover{
+    margin-top: 10px;
+}
+.menu ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+
+}
+/* ----------------------- END NAV BAR ------------------------------------------------------------ */
+
+
+/* ----------------------- START imag SECTION ------------------------------------------------------------ */
+
+.img-bg{
+    width: 100%;
+    height: 500px;
+    background-image: url(imgs/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-bg h1{
+    font-size: 30px;
+    color: var(--main-color);
+    margin: 5px 0px;
+}
+.img-bg p{
+    font-size: 17px;
+    margin: 2px 0px;
+}
+/* ----------------------- END imag SECTION ------------------------------------------------------------ */
+
+
+/* ----------------------- START CARDS SECTION ------------------------------------------------------------ */ 
+.cards-section{
+    width: 100%;
+    min-height: 500px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cards-section .card{
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    text-align: center;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 15px rgb(107, 107, 107) ;
+    overflow: hidden;
+    transition: .5s;
+    cursor: pointer;
+}
+.cards-section .card:hover{
+    width: 22%;
+    height: 420px;
+}
+.cards-section .card i{
+    font-size: 50px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+.cards-section .card h2{
+    font-size: 20px;
+    margin: 5px 0px;
+}
+.cards-section .card p{
+    width: 45%;
+    margin: 5px 0px;
+
+}
+
+/* ----------------------- END CARDS SECTION ------------------------------------------------------------ */ 
+
+
+/* ----------------------- START SERVICES SECTION ------------------------------------------------------------ */ 
+.services{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: black;
+}
+.service-title{
+    text-align: center;
+    margin-bottom: 90px;
+}
+.service-title h3{
+    font-size: 150px;
+    color: rgba(172, 172, 172, 0.342);
+    z-index: 1;
+    position: absolute;
+    top: -10px;
+    left: 680px;
+}
+.service-title p{
+    margin-top: 20px;
+    font-size: 25px;
+    position: absolute;
+    top: 90px;
+    left: 800px;
+}
+.service-main{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+.service-text{
+    width: 60%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+}
+.service-text i{
+    font-size: 30px;
+    color: var(--main-color);
+}
+.service-text div{
+    /* background-color: #02c4ff; */
+    margin-left: 10px;
+}
+.couple1{
+    margin-bottom: 25px;
+}
+.first-couple div > div , .second-couple div > div{
+    font-size: 25px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    background-color: rgba(163, 163, 163, 0.116);
+    border-radius: 10px;
+    padding: 5px;
+    width: fit-content;
+    cursor: pointer;
+}
+.first-couple div p, .second-couple div p{
+    font-size: 18px;
+    margin-left: 5px;
+    width: 450px;
+}
+.service-img img{
+    width: 500px;
+    cursor: pointer;
+    transition: .6s;
+    margin-right: -30px;
+    border-radius: 20px;
+}
+.service-img img:hover{
+    margin-right: 20px;
+
+}
+.service-img::after{
+    content: '';
+    width: 200px;
+    height: 450px;
+    background-color: rgba(148, 84, 0, 0.363);
+    position: absolute;
+    top: 100px;
+    z-index: 0;
+    right: 0px;
+    border-radius: 20px 0px 0px 20px;
+}
+/* ----------------------- END SERVICES SECTION ------------------------------------------------------------ */ 
+/* ----------------------- START PORTFOLIO SECTION ------------------------------------------------------------ */ 
+.portfolio{
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: black;
+}
+.portfolio-title h3{
+    font-size: 150px;
+    color: rgba(255, 255, 255, 0.342);
+    z-index: 1;
+    position: absolute;
+    top: -10px;
+    left: 680px;
+}
+.portfolio-title p{
+    margin-top: 20px;
+    font-size: 25px;
+    position: absolute;
+    top: 90px;
+    left: 800px;
+}
+.portfolio-cards{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   flex-wrap: wrap;
+}
+.pcard{
+    width: 350px;
+    height: 300px;
+    margin-top: 80px;
+    padding: 20px 10px;
+    border: 2px solid rgba(0, 0, 0, 0.322);
+    background-color:#96e6ff34;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .5s;
+    cursor: pointer;
+}
+.pcard:hover{
+    width: 380px;
+    height: 330px;
+    font-size: 18px;
+}
+.pcard img{
+    width: 300px;
+    margin-left: 10px;
+}
+/* ----------------------- END PORTFOLIO SECTION ------------------------------------------------------------ */ 
+
+
+/* <!-- ----------------------- START ABOUT SECTION ------------------------------------------------------------  --> */
+.about-section{
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    position: relative;
+}
+.about-title h3{
+    font-size: 150px;
+    color:  rgba(172, 172, 172, 0.342);
+    z-index: 1;
+    position: absolute;
+    top: -10px;
+    left: 730px;
+}
+.about-title p{
+    margin-top: 20px;
+    font-size: 25px;
+    position: absolute;
+    top: 90px;
+    left: 800px;
+}
+.about-img img{
+    width: 500px;
+    margin-top: 200px;
+    margin-right: 200px;
+}
+.about-text {
+    width: 350px;
+    margin-top: 200px;
+}
+.about-text p:first-child{
+    margin-bottom: 80px;
+    font-weight: bold;
+}
+.about-text p:last-child::before{
+    content: "";
+    width: 300px;
+    height: 5px;
+    background-color: aquamarine;
+    position: absolute;
+    top: 360px;
+}
+/* <!-- ----------------------- END ABOUT SECTION ------------------------------------------------------------  --> */
+
+/* <!-- ----------------------- START CONTACT SECTION ------------------------------------------------------------  --> */
+
+.contact-section{
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: black;
+}
+.contact-title h3{
+    font-size: 150px;
+    color: rgba(255, 255, 255, 0.342);
+    z-index: 1;
+    position: absolute;
+    top: -10px;
+    left: 680px;
+}
+.contact-title p{
+    margin-top: 20px;
+    font-size: 25px;
+    position: absolute;
+    top: 90px;
+    left: 800px;
+}
+.contact-text{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+}
+.contact-text h3{
+    margin-bottom: 10px;
+    font-size: 30px;
+
+
+}
+.contact-text h3:first-child{
+    font-size: 35px;
+    color: aquamarine;
+    
+}
+.contact-text p a i{
+    color: black;
+}
+/* <!-- ----------------------- END CONTACT SECTION ------------------------------------------------------------  --> */
+
+
+
+/* <!-- ----------------------- START FOOTER SECTION ------------------------------------------------------------  --> */
+
+footer{
+    text-align: center;
+    background-color: white;
+    color: black;
+    min-height: 50px;
+    padding-top: 20px;
+    font-size: 18px;
+}
+/* <!-- ----------------------- END FOOTER SECTION ------------------------------------------------------------  --> */
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1382px){
+    .service-title h3 ,.portfolio-title h3, .about-title h3, .contact-title h3{
+        font-size: 150px;
+        color: rgba(172, 172, 172, 0.342);
+        z-index: 1;
+        position: absolute;
+        top: -10px;
+        left: 400px;
+    }
+    .service-title p, .portfolio-title p,  .about-title p,  .contact-title p{
+        margin-top: 20px;
+        font-size: 25px;
+        position: absolute;
+        top: 90px;
+        left: 500px;
+    }
+    .portfolio-title h3{
+        font-size: 150px;
+        color: rgba(255, 255, 255, 0.342);
+    } 
+    .about-title h3{
+        font-size: 150px;
+        color:  rgba(172, 172, 172, 0.342);
+    }
+    .contact-title h3{
+        font-size: 150px;
+        color: rgba(255, 255, 255, 0.342);
+    }
+   
+}
+@media(max-width:1593px){
+    .service-main{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+    }
+    .service-img img{
+        margin-top: 100px;
+        width: 500px;
+        cursor: pointer;
+        transition: .6s;
+        margin-right: -30px;
+        border-radius: 20px;
+    }
+    .service-img img:hover{
+        margin-right: -30px;
+        margin-top: 90px;
+        margin-bottom: 10px;
+        
+    }
+    .service-img::after{
+        content: '';
+        width: 562px;
+        height: 150px;
+        background-color: rgba(148, 84, 0, 0.363);
+        position: absolute;
+        top: 687px;
+        z-index: 0;
+        right: 511px;
+        border-radius: 20px 20px 0px 0px;
+    }
+}
